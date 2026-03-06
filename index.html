@@ -3,158 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>S.TECH Web Development | Home</title>
+<title>Lucide Test Local</title>
 
-<!-- Lucide Icons -->
-<script src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.min.js"></script>
+<!-- UMD version of Lucide (works on local files) -->
+<script src="https://cdn.jsdelivr.net/npm/lucide/dist/lucide.js"></script>
 
-<!-- Firebase SDK (Firestore + Auth) -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.15.0/firebase-app.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.15.0/firebase-firestore.js";
-  import { getAuth } from "https://www.gstatic.com/firebasejs/10.15.0/firebase-auth.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyDCBD2gVIg9v-KqYaMFZeu_grgs3yKYfPs",
-    authDomain: "fir-chat-f8d55.firebaseapp.com",
-    projectId: "fir-chat-f8d55",
-    storageBucket: "fir-chat-f8d55.firebasestorage.app",
-    messagingSenderId: "792896094694",
-    appId: "1:792896094694:web:dd373e5d7d2fc9ae1d5627"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  const auth = getAuth(app);
-</script>
-
-<!-- CSS inside the file -->
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background:#f5f5f5;
-  padding-bottom: 70px; /* for bottom nav */
-}
-header {
-  background:#111;
-  color:#fff;
-  text-align:center;
-  padding: 50px 20px;
-}
-header h1 { margin:0; font-size:2rem; }
-header p { margin:10px 0 0; font-size:1.1rem; }
-section { padding: 30px 20px; }
-section h2 { margin-bottom:20px; text-align:center; color:#111; }
-.services { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
-.service-card {
-  background:#fff;
-  border-radius:10px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.1);
-  padding:20px;
-  width:250px;
-  text-align:center;
-}
-.service-card i { margin-bottom:10px; color:#00FFAA; }
-.bottom-nav {
-  position: fixed;
-  bottom:0; left:0; width:100%;
-  background:#111;
-  display:flex; justify-content: space-around;
-  padding:10px 0;
-}
-.bottom-nav .nav-item {
-  color:#fff;
-  text-align:center;
-  font-size:12px;
-}
-.bottom-nav .nav-item.active { color:#00FFAA; }
-.bottom-nav .nav-item i { display:block; margin:0 auto 5px; }
-button.cta {
-  display:block;
-  margin: 30px auto;
-  padding:10px 25px;
-  background:#00FFAA;
-  border:none;
-  border-radius:5px;
-  color:#111;
-  font-size:16px;
-  cursor:pointer;
-}
-</style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to S.TECH Web Development</h1>
-  <p>Building modern websites, mobile apps, AI solutions, and more.</p>
-</header>
+<h1>Lucide Icon Test</h1>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="service-card">
-      <i data-lucide="code" width="32" height="32"></i>
-      <h3>Web Development</h3>
-      <p>Responsive, modern websites using React, Next.js, and Tailwind CSS.</p>
-    </div>
-    <div class="service-card">
-      <i data-lucide="smartphone" width="32" height="32"></i>
-      <h3>Mobile Apps</h3>
-      <p>iOS & Android apps built with Flutter or React Native for high performance.</p>
-    </div>
-    <div class="service-card">
-      <i data-lucide="cpu" width="32" height="32"></i>
-      <h3>AI Solutions</h3>
-      <p>AI-powered applications and automation for smarter workflows.</p>
-    </div>
-    <div class="service-card">
-      <i data-lucide="clipboard" width="32" height="32"></i>
-      <h3>Consultancy</h3>
-      <p>Tech strategy, planning, and solutions to scale your business effectively.</p>
-    </div>
-  </div>
-</section>
-
-<button class="cta">Book an Appointment</button>
-
-<!-- Bottom Navigation -->
-<div class="bottom-nav">
-  <div class="nav-item active">
-    <i data-lucide="home" width="24" height="24"></i>
-    Home
-  </div>
-  <div class="nav-item">
-    <i data-lucide="folder" width="24" height="24"></i>
-    Projects
-  </div>
-  <div class="nav-item">
-    <i data-lucide="user" width="24" height="24"></i>
-    About
-  </div>
-  <div class="nav-item">
-    <i data-lucide="message-circle" width="24" height="24"></i>
-    Contact
-  </div>
-  <div class="nav-item">
-    <i data-lucide="file-text" width="24" height="24"></i>
-    Blog
-  </div>
-</div>
+<i data-lucide="home" width="48" height="48"></i>
+<i data-lucide="code" width="48" height="48"></i>
+<i data-lucide="smartphone" width="48" height="48"></i>
 
 <script>
-// Activate Lucide icons
-lucide.createIcons();
-
-// Bottom nav click simulation (for demo)
-const navItems = document.querySelectorAll('.bottom-nav .nav-item');
-navItems.forEach(item => {
-  item.addEventListener('click', () => {
-    navItems.forEach(i => i.classList.remove('active'));
-    item.classList.add('active');
-    alert('Navigation will go to ' + item.textContent); // placeholder
-  });
-});
+  // Activate icons
+  lucide.createIcons();
 </script>
 
 </body>
